@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td, th, table{
+            border: solid 1px;
+        }
+
+        form{
+            border-style: dotted;
+            border-color: red;
+            padding: 5px;
+            width: 35%;
+        }
+    </style>
+</head>
+<body>
+        <h1>Linha de Cabeçalho 1</h1>
+        <h2>Linha de Cabeçalho 2</h2>
+        <h3>Linha de Cabeçalho 3</h3>
+        <h4>Linha de Cabeçalho 4</h4>
+        <h5>Linha de Cabeçalho 5</h5>
+        <h6>Linha de Cabeçalho 6</h6>
+        <br>
+    <hr>
+        <p><strong>Este é um texto em negrito.</strong></p>
+        <p><em>Este é um texto em itálico.</em></p>
+        <p>Linha Horizontal</p>
+    <hr>
+    <p>
+        <span style="font-style: italic; text-decoration: underline; font-weight: bold; color: red;">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit.
+        <span style=" color: green;">Pellentesque</span> id justo at ligula facilisis tincidunt.
+        Fusce euismod <span style="font-style: italic; color: blue;">ultricies</span> sapien, <span style="color: purple; text-decoration: underline;">porta</span> <span style="color: orange;">auctor</span> libero maximus nec.
+    </p>
+    <p>
+        Para mais informações, visite os seguintes sites:
+        <a href="https://www.example.com" target="_blank" style="color: red;">Site 1</a>,
+        <a href="https://www.example2.com" target="_blank" style="color: green;">Site 2</a>,
+        <a href="https://www.example3.com" target="_blank" style="color: blue;">Site 3</a>.
+    </p>
+    <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">Título da Tabela</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>coluna 1-0</td>
+                    <td colspan="2">Coluna que ocupa espaço de 2 colunas </td>
+                </tr>
+                <tr>
+                    <td>Coluna 2-0</td>
+                    <td>Coluna 2-1</td>
+                    <td>Coluna 2-2</td>
+                </tr>
+            </tbody>
+        </table>
+    <hr>
+<!-- 
+
+  -------------
+  | 1 | 2 |  3|
+  |-----------|
+  | 4     | 6 |
+  |-----------|
+  |6          |
+  -------------
+
+-->
+        <table border="1">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td colspan="2">4</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td colspan="3">6</td>
+            </tr>
+        </table>
+    <hr>
+ <!-- 
+
+  --------------
+  |            |
+  |    123     |
+  |            |
+  |------------|
+  |    | 5 | 6 |   
+  | 47 |-------|
+  |    | 89    |
+  --------------
+
+-->   
+        <table border="1">
+            <tr>
+                <td colspan="3"><h1>123</h1></td>
+            </tr>
+            <tr>
+                <td rowspan="2">47</td><td>5</td><td>6</td>
+            </tr>
+            <tr>
+                <td colspan="2">89</td>
+            </tr>
+        </table>
+        
+    <hr>
+        <p><a href="index.html">Link 1</a><br> <!-- abre a página atual-->
+        <a href="http://www.google.com">Google</a></p> <!-- abre a página de google-->
+        <p><a href="http://www.yahoo.com">Yahoo</a> </p><!-- abre o Yahoo-->
+    <hr>
+        <form action="index.html" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+        
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="M">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="sexo" value="F">
+            <label for="feminino">Feminino</label><br><br>
+        
+            <label for="estadoCivil">Estado Civil:</label>
+            <select id="estadoCivil" name="estadoCivil">
+                <option value="Solteiro">Solteiro</option>
+                <option value="Casado">Casado</option>
+                <option value="Outros">Outros</option>
+            </select><br><br>
+        
+            <input type="submit" value="Enviar">
+        </form>
+    <hr>
+        <form>
+            <table>
+                <tr>
+                    <th><label for="usuario">Usuario</label></th>
+                    <th><input type="text" id="usuario" name="usuario" required></th>
+                </tr>
+                <tr>
+                    <th><label for="senha">Senha</label></th>
+                    <th><input type="password" id="senha" name="senha" required></th>
+                </tr>
+                <tr>
+                    <th colspan="2"> <input type="submit" value="Submit"></th>
+                </tr>
+            </table>
+        </form>
+    <hr>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="user">Usuario</label></td>
+                    <td><input type="text" id="user" name="user" required></td>
+                    <td><label for="password">Senha</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+                <tr>
+                    <td colspan="5"><input type="checkbox"> Lembrar Usuario e Senha</td>
+                </tr>
+            </table>
+        </form>
+    <hr>
+<!--
+------------------------------    
+|    Usuario:|               |
+|------------|---------------|   	
+|      Senha:|               |	
+|------------|---------------|    
+|   Endereço:|               |
+|            |               |
+|            |               |
+|------------|---------------| 
+|      Idade:| menos de 25   |
+|            | entre 25 e 50 |  	
+|            | mais de 50    |
+|------------|---------------|
+|       Sexo:|	             |
+|            | * masculino   |
+|            | * feminino    |
+|            |               |
+|----------------------------|
+|Eu concordo:| o             |
+|----------------------------|
+|	       Submit            |
+------------------------------
+
+-->    
+        <form name="form1" method="post" action="">
+            <table border="1" align="center">
+                <tr>
+                    <td align="right" valign="top">Usuario:</td>
+                    <td><input name="usuario" type="text" id="usuario"></td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Senha: </td>
+                    <td><input name="senha" type="password" id="senha"></td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Endere&ccedil;o: </td>
+                    <td><textarea name="end" rows="5" id="end"></textarea></td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Idade: </td>
+                    <td>
+                        <select name="idade" size="3" id="idade">
+                        <option value="1">menos de 25</option>
+                        <option value="2">entre 25 e 50</option>
+                        <option value="3">mais de 50</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Sexo: </td>
+                    <td>
+                        <p>
+                            <label><input type="radio" name="sexo" value="m">masculino</label><br>
+                            <label><input type="radio" name="sexo" value="f">feminino</label><br>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Eu concordo:</td>
+                    <td><input name="concordo" type="checkbox" id="concordo" value="1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" name="Submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    <hr> 
+        <h1>Minha 1° Página Web - Exercício 01</h1>
+        <h3>Nome, N° e Turma dos Integrantes</h3>
+        <hr>
+        <p>Colégio Singular Informa:</p>
+        <p>Os alunos do <strong> Curso Técnico em Informática</strong>, na disciplina de <u>LGP</u>, iniciaram a edição de <u>Páginas Web</u>, utilizando a programação <u><strong>HTML</strong></u>.</p>
+        <hr>              
+        <p>Desta forma, em breve, eles serão</p>
+        <br>
+        <h2>Web Designers</h2>
+    <hr>    
+        <h1>Minha 2° Página Web - Exercício 02</h1>
+        <h3>Nome, N° e Turma dos Integrantes</h3>
+        <hr>
+        <p>LISTA ORDENADAS</p>
+        <ol>
+            <li> 
+                Volkswagen
+                <ol>
+                    <li>Gol</li>
+                    <li>Parati</li>
+                    <li>Golf</li>
+                </ol>
+            </li>
+            <li>
+                Fiat
+                <ol>
+                    <li>Uno</li>
+                    <li>Palio</li>
+                    <li>Stilo</li>
+                </ol>
+
+            </li> 
+        </ol>
+    <hr>
+        <p>LISTA NÃO ORDENADAS</p>  
+        <ul>
+            <li>
+            General Motors
+                <ul>
+                    <li>Celta</li>
+                    <li>Corsa</li>
+                    <li>Astra</li>
+                </ul>
+            </li>
+            <li>
+            Ford
+                <ul>
+                    <li>Ka</li>
+                    <li>Fiesta</li>
+                    <li>Ecosport</li>
+                </ul>    
+            </li>
+        </ul>
+    <hr>
+        <h1>Minha 3° Página Web - Exercício 03</h1>
+        <h3>Nome, N° e Turma dos Integrantes</h3>
+        <hr>      
+        <p>LISTAS ANINHADAS MISTAS - I</p>
+        <hr>
+        <ol>
+            <li>
+                <b>Aluno 1</b>
+                <ul>
+                    <li><i>Home Page: http://www.aluno1.com.br</i></li>
+                    <li><i>E-mail: aluno1@singular.com.br</i></li>
+                </ul>
+            </li>
+            <li>
+                <b>Aluno 2</b>
+                <ul>
+                    <li><i>Home Page: http://www.aluno2.com.br</i></li>
+                    <li><i>E-mail: aluno2@singular.com.br</i></li>
+                </ul>   
+            </li>
+        </ol>
+        <hr>      
+        <p>LISTAS ANINHADAS MISTAS - II</p>
+        <hr>
+        <ul>
+            <li>
+                <b>Disciplinas do 2º Ano de Informática</b>
+                <ol>
+                    <li><i>Fundamentos de Informática</i></li>
+                    <li><i>Técnicas de Computação Gráfica</i></li>
+                    <li><i>Técnicas Operacionais</i></li>
+                </ol>
+            </li>
+            <li>
+                <b>Disciplinas do 3º Ano de Informática</b>
+                <ol>
+                    <li><i>Linguagem Gráfica de Programação</i></li>
+                    <li><i>Técnicas de Programação</i></li>
+                    <li><i>Linguagem de Programação</i></li>
+                </ol>
+            </li>
+        </ul>
+    <hr>
+        <h3>Nome, N° e Turma dos Integrantes</h3>
+        <hr>
+        <img src="https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2021/02/nyan-cat-1.gif" alt="GIF Nyan Cat" style="width:250px;height:150px;"> <br>
+        <img src="https://pbs.twimg.com/profile_images/1455197953841405958/3PIDtdC4_400x400.jpg" alt="JPG Unidavi" style="width:250px;height:150px;"> <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfk_HAUg6niZ6f5QHqqG3RXe2-jmu8LmY2rikBmLNCyA&s" alt="BMP imagem do Ceu" style="width:250px;height:150px;"> <br>
+        <a href="https://www.nintendo.com/pt-br/" target="_blank"><img src="https://cj.ibxk.com.br/2022/10/18/18143722469319.jpg" alt="Link foto Mario" style="width:100px;"></a> <br>
+        <a href="https://www.playstation.com/pt-br/games/crash-bandicoot-4-its-about-time/" target="_blank"><img src="https://static.wikia.nocookie.net/crashban/images/0/03/Crash_1_Crash_Bandicoot.png/revision/latest?cb=20230516213125" alt="Link foto Crash" style="width: 50px;"></a> <br>  
+    <hr>
+        <div style= "background-color: #AAAAFF;" text="darkblue" link="blue" vlink="ligthblue" alink="white">
+            <h1 align="center">Utilizando  Âncoras</h1>
+            <h3 align="center" style="color:white;">Nome, No e Turma dos Integrantes</h3>
+            <a name="topo"></a>
+            <a href="#LO">Lista Ordenada</a><br/>
+            <a href="#LNO">Lista Não Ordenada</a><br/>
+            <a href="#LAO">Lista Aninhada Ordenada</a><br/>
+            <a href="#LANO">Lista Aninhada Não Ordenada</a>
+            <hr>
+                <a name="LO"><h2 align="center">Lista Ordenada</h2></a>
+            <hr>
+            <ol>
+                <li>Curso Técnico em Informática</li>
+                <li>Curso Técnico em Turismo</li>
+            </ol>
+            <a href="#topo">Volta ao Início</a>
+            <br>
+            <!--- 2a âncora --->
+            <hr>
+                <a name="LNO"><h2 align="center">Lista Não Ordenada</h2></a>
+            <hr>
+            <ul>
+                <li>Curso Técnico em Eletrônica</li>
+                <li>Curso Técnico em Química</li>
+                </ul>
+            <a href="#topo">Volta ao Início </a><br/>
+            <!--- 3a âncora --->
+            <hr>
+                <a name="LAO"><h2 align="center">Lista Aninhada Ordenada</h2></a>
+            <hr>
+            <ol>
+                <li> Curso Técnico em Informática 
+                    <ol>
+                        <li>Manhã</li>
+                        <li>Noite</li>
+                    </ol>
+                </li>
+                <li> Curso Técnico em Turismo
+                    <ol>
+                        <li>Manhã</li>
+                        <li>Noite</li>
+                    </ol>
+                </li>    
+            </ol>
+            <a href="#topo">Volta ao Início </a><br/>
+            <!--- 4a âncora --->
+            <hr>
+                <a name="LANO"></a><h2 align="center">Lista Aninhada Não Ordenada</h2>
+            <hr>
+            <ul>
+                <li> Curso Técnico em Eletrônica
+                    <ul>
+                    <li>Manhã não tem</li>
+                    <li>Noite</li>
+                    </ul>
+                </li>
+                <li> Curso Técnico em Química
+                    <ul>
+                        <li>Manhã não tem</li>
+                        <li>Noite</li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#topo">Volta ao Início </a><br>
+        </div>
+    <hr> 
+        <h1>Listas, Links e  Âncoras</h1>
+        <hr>
+        <h2>Nomes dos Integrantes</h2>
+        <hr>
+        <a name="inicio"></a>
+        <ol>
+            <li>Nome completo do Aluno 1</li>
+            <li>Nome completo do Aluno 2</li>
+            <li>Nome completo do Aluno 3</li>
+        </ol>
+        <br>
+        <hr>
+            <h2>Dados Pessoais</h2>
+        <hr>
+        <ol>
+            <li>Apelido do Aluno 1
+                <ul>
+                    <li>Endereço:</li>
+                    <li>Data de Nascimento</li>
+                    <li>Descrição Física:</li>
+                    <li>Passatempo:</li>
+                    <li>Enviar <u>E-Mail</u> para mim:</li>
+                    <a href="#inicio">Volta ao Topo</a>
+                </ul>
+            </li>
+            <br>
+            <li>Apelido do Aluno 2
+                <ul>
+                    <li>Endereço:</li>
+                    <li>Data de Nascimento</li>
+                    <li>Descrição Física:</li>
+                    <li>Passatempo:</li>
+                    <li>Enviar <u>E-Mail</u> para mim:</li>
+                    <a href="#inicio">Volta ao Topo</a>
+                </ul>
+            </li>
+            <br>
+            <li>Apelido do Aluno 3
+                <ul>
+                    <li>Endereço:</li>
+                    <li>Data de Nascimento</li>
+                    <li>Descrição Física:</li>
+                    <li>Passatempo:</li>
+                    <li>Enviar <u>E-Mail</u> para mim:</li>
+                    <a href="#inicio">Volta ao Topo</a>
+                </ul>
+            </li>
+            <br>            
+        </ol>
+    <hr>
+    
+    <table style="width: 100%;  background-color: red;  border: 3px solid blue;">
+        <tr>
+            <th style="padding: 10px; text-align: center; border: 1px solid blue; background-color: red; color: white; width: 10%; text-align: left; background-color: yellow;">A1</th>
+            <th style="padding: 10px; text-align: center; border: 1px solid blue; background-color: red; color: white; width: 40%; height: 40px; text-align: center; vertical-align: bottom; background-color: white;">A2</th>
+            <th style="padding: 10px; text-align: center; border: 1px solid blue; background-color: red; color: white; width: 50%; text-align: center; vertical-align: top;
+            background-color: orange;">A3</th>
+            <th rowspan="2" style="padding: 10px; text-align: center; border: 1px solid blue; background-color: red; color: white;  background-color: orange;">A4</th>
+        </tr>
+        <tr>
+            <th colspan="2" style="padding: 10px; text-align: center; border: 1px solid blue; background-color: red; color: white; background-color: laranja;">B1</th>
+            <th style="padding: 10px; text-align: center; border: 1px solid blue; background-color: red; color: white; width: 40%; height: 50px; text-align: center; background-color: orange;">B2</th>
+        </tr>
+        <tr>
+            <td style="padding: 10px; text-align: center; border: 1px solid blue; width: 10%; text-align: right; background-color: orange;">C1</td>
+            <td colspan="2" style="padding: 10px; text-align: center; border: 1px solid blue; background-color: laranja;">C2</td>
+            <td style="padding: 10px; text-align: center; border: 1px solid blue; width: 30%; text-align: center; background-color: yellow;">C4</td>
+        </tr>
+    </table>    
+
+             
+</body> 
+</html>
