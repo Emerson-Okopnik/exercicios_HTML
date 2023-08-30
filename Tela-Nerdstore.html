@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6ee53f400e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style-Nerdstore.css">
+    <title>NerdStore</title>
+</head>
+<body>
+    <div class="principal">
+        <header>
+            <div class="cabecario-top">
+                <img src="https://portal.nerdstore.com.br/wp-content/uploads/2022/08/logo-nerdstore-nova-email-azul2.webp" alt="Logo da Página" width="233" > 
+                <ul>
+                    <li class="ajuda-link"><a href="#">Perguntas e Respostas</a></li>
+                    <li class="ajuda-link"><a href="#">Ajuda</a></li>
+                    <li>
+                        <div class="search-container">
+                            <input type="text" class="search-box" placeholder="Search Store">
+                            <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar">                  
+                <ul class="menu">
+                    <li><a href="index.html"><p>Home</p></a></li>
+                    <li><a href="Tela-Blizzard.html"><p >Blizzard</p></a></li>
+                    <li><a href="Tela-Steam.html"><p>Steam</p></a></li>
+                    <li><a href="Tela-Nerdstore.html"><p>Nerd Store</p></a></li>
+                    <li><p >menu</p></li>
+                </ul>
+            </div>  
+        </header>
+        <section>
+            <div>
+                <img src="https://nerdstore.com.br/wp-content/uploads/2023/08/banner-principal-desktop-camisetas-nerdstore.jpg.webp" alt="" width="1280">
+            </div>
+            <div class="opcao-divs">
+                <button class="option" onclick="changeContent('content-camisas')">Camisetas Novas!</button>
+                <button class="option" onclick="changeContent('content-livros')">Livros</button>
+                <button class="option" onclick="changeContent('content-canecas')">Canecas</button>
+                <button class="option" onclick="changeContent('content-acessorios')">Acessorios</button>
+                <div class="options-container">
+                    <div class="content active" id="content-camisas">
+                        <ul class="conteudo-novo">
+                            <li class="produto">
+                                <div>
+                                    <a href="https://nerdstore.com.br/produto/camiseta-mans-best-friend-white-edition/" target="_blank">
+                                        <img src="https://nerdstore.com.br/wp-content/uploads/2023/07/79f7ada1d7f8253a79978ff41d168be0.jpg.webp " alt="Camiseta Mr. Wick" width="200">
+                                        <p>Camiseta Mans Best Friend</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="produto">
+                                <a href="https://nerdstore.com.br/produto/camiseta-on-the-journey/" target="_blank">
+                                    <img src="https://nerdstore.com.br/wp-content/uploads/2023/03/vitrine-camiseta-on-the-journey-modelo-nerdstore.jpg.webp" alt="Camiseta On The Journey" width="200">
+                                    <p>Camiseta On The Journey</p>
+                                </a>
+                            </li>
+                            <li class="produto">
+                                <a href="https://nerdstore.com.br/produto/camiseta-balboa-crossfit/" target="_blank">
+                                    <img src="https://nerdstore.com.br/wp-content/uploads/2019/07/Camiseta-Balboa-Crossfit.jpg" alt="Camiseta Balboa Crossfite" width="200">
+                                    <p>Camiseta Balboa Crossfite</p>
+                                </a>
+                            </li>
+                            <li class="produto">
+                                <a href="https://nerdstore.com.br/produto/camiseta-there-and-back-again-black-edition/" target="_blank">
+                                    <img src="https://nerdstore.com.br/wp-content/uploads/2023/04/vitrine-camiseta-there-back-again-black-edition-nerdstore.jpg.webp" alt="Camiseta Modafoca – Referências do Cinema Black Edition" width="200">
+                                    <p>Camiseta There and Back Again</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content" id="content-livros">
+                        <ul class="conteudo-novo">
+                            <li class="produto">
+                                <div>
+                                    <a href="https://nerdstore.com.br/produto/kit-colecionador-o-hobbit-versao-exclusiva/" target="_blank">
+                                        <img src="https://nerdstore.com.br/wp-content/uploads/2020/01/o-hobbit-livro-nerdstore-1.jpg.webp" alt="O Hobbit Versão Exclusiva" width="200">
+                                        <p>O Hobbit Versão Exclusiva</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="produto">
+                                <a href="https://nerdstore.com.br/produto/a-lenda-de-ghanor-rpg-livro-das-buscas/" target="_blank">
+                                    <img src="https://nerdstore.com.br/wp-content/uploads/2023/06/a-lenda-de-ghanor-o-livro-das-buscas-01.jpg.webp" alt="A Lenda de Ghanor RPG" width="200">
+                                    <p>A Lenda de Ghanor RPG</p>
+                                </a>
+                            </li>
+                            <li class="produto">
+                                <a href="https://nerdstore.com.br/produto/livro-os-sussurros-do-caos-rastejante/" target="_blank">
+                                    <img src="https://nerdstore.com.br/wp-content/uploads/2022/07/graphic-novel-os-sussurros-do-caos-rastejante-nerdcast-rpg-nerdstore.jpg.webp" alt="Livro Os Sussurros do Caos Rastejante" width="200">
+                                    <p>Os Sussurros do Caos Rastejante</p>
+                                </a>
+                            </li>
+                            <li class="produto">
+                                <a href="https://nerdstore.com.br/produto/livro-o-sangue-dos-elfos-the-witcher-a-saga-do-bruxo-geralt-de-rivia/" target="_blank">
+                                    <img src="https://nerdstore.com.br/wp-content/uploads/2020/03/livro-the-witcher-a-espada-do-destino-02-1.jpg.webp" alt="O Sangue dos Elfos – The Witcher" width="200">
+                                    <p>O Sangue dos Elfos – The Witcher</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content" id="content-canecas">
+                        <ul class="conteudo-novo">
+                            <li class="produto">
+                                <div>
+                                    <a href="https://nerdstore.com.br/produto/caneca-pop-hell-fire-club-stranger-things/" target="_blank">
+                                        <img src="https://nerdstore.com.br/wp-content/uploads/2022/12/caneca-hellfire-club-2-1.jpg.webp" alt="Stranger Things Clube do Inferno" width="200">
+                                        <p>Stranger Things Clube do Inferno</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="produto">
+                                <a href="https://nerdstore.com.br/produto/caneca-tom-hogwarts-casas-harry-potter/" target="_blank">
+                                    <img src="https://nerdstore.com.br/wp-content/uploads/2022/12/435ce61d60515e9c50b4203268c210ae.jpg.webp" alt="Harry Potter Poção 3D" width="200">
+                                    <p>Harry Potter Poção</p>
+                                </a>
+                            </li>
+                            <li class="produto">
+                                <a href="https://nerdstore.com.br/produto/caneca-alienigena/" target="_blank">
+                                    <img src="https://nerdstore.com.br/wp-content/uploads/2022/12/52e30afd607521f6c9d31f6dc925b2f9.jpg.webp" alt="Caneca Alienígena" width="200">
+                                    <p>Caneca Alienígena</p>
+                                </a>
+                            </li>
+                            <li class="produto">
+                                <a href="https://nerdstore.com.br/produto/caneca-buck-the-last-of-us-2/" target="_blank">
+                                    <img src="https://nerdstore.com.br/wp-content/uploads/2022/12/3bd1ac8e4ee7bafefc20cc191f9a5885.jpg.webp" alt="Caneca The Last of Us 2" width="200">
+                                    <p>Caneca The Last of Us 2</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content" id="content-acessorios">
+                        <ul class="conteudo-novo">
+                            <li class="produto">
+                                <div>
+                                    <a href="https://nerdstore.com.br/produto/pulseira-flamula-corvinal/" target="_blank">
+                                        <img src="https://nerdstore.com.br/wp-content/uploads/2020/11/pulseira-corvinal-01.jpg.webp" alt="Pulseira Flâmula Corvinal " width="200">
+                                        <p>Pulseira Flâmula Corvinal</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="produto">
+                                <a href="https://nerdstore.com.br/produto/pulseira-flamula-grifinoria/" target="_blank">
+                                    <img src="https://nerdstore.com.br/wp-content/uploads/2020/11/pulseira-grifinoria-01.jpg.webp" alt="Pulseira Flamula Grifinória" width="200">
+                                    <p>Pulseira Flamula Grifinória</p>
+                                </a>
+                            </li>
+                            <li class="produto">
+                                <a href="https://nerdstore.com.br/produto/pulseira-flamula-lufa-lufa/" target="_blank">
+                                    <img src="https://nerdstore.com.br/wp-content/uploads/2020/11/pulseira-lufa-lufa-01.jpg.webp" alt="Pulseira Flamula Lufa-lufa" width="200">
+                                    <p>Pulseira Flamula Lufa-lufa</p>
+                                </a>
+                            </li>
+                            <li class="produto">
+                                <a href="https://nerdstore.com.br/produto/colar-chave-de-erebor/" target="_blank">
+                                    <img src="https://nerdstore.com.br/wp-content/uploads/2020/03/chave-de-erebor-2.jpg.webp" alt="Colar da Chave de Erebor" width="200">
+                                    <p>Colar da Chave de Erebor</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>     
+        </section>
+        <aside>
+            <div class="container-segundario">
+                <legend>Acesso</legend>
+                <form action="#">
+                    <label for="email">E-mail:
+                        <input type="email" id="email" placeholder="Ex xxxxx@gmail.com" required>
+                    </label> <br>
+                    <label for="senha">Senha:
+                        <input type="password" id="senha" required>
+                    </label> <br>
+                    <a href="#">Esqueceu a senha?</a> <br>
+                    <input type="submit" value="Sign In" id="botao">
+                </form>
+            </div>
+            <br>
+            <div class="container-segundario">
+                <legend>Guia</legend>
+                <ul class="guia">
+                    <li>Guia</li>
+                    <li>Guia</li>
+                    <li>Guia</li>
+                    <li>Guia</li>
+                </ul>
+            </div>
+            <br>
+            <div class="container-segundario">
+                <legend>Video</legend>
+                <video width="210" controls>
+                    <source src="Abertura-NerdOffice.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="footer-column">
+            <h3>Categoria</h3>
+            <ul>
+                <li><a href="#">Categoria</a></li>
+                <li><a href="#">Categoria</a></li>
+                <li><a href="#">Categoria</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Página Inicial</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Sobre</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti nemo eius ullam pariatur libero incidunt, assumenda enim debitis tempore omnis cum optio repudiandae placeat harum maiores. Officiis, asperiores ipsam.</p>
+        </div>
+    </footer>
+    <script>
+        function changeContent(contentId) {
+          const contentDivs = document.querySelectorAll('.content');
+          contentDivs.forEach(div => div.classList.remove('active'));
+    
+          const selectedContent = document.getElementById(contentId);
+          selectedContent.classList.add('active');
+        }
+      </script>
+</body>
+</html>
